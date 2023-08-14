@@ -1,0 +1,208 @@
+header nav {
+    background: #fff9fa;
+}
+
+header nav .navbar-brand {
+    color: #f72634;
+    font-size: 23px;
+}
+
+
+
+
+header nav .navbar-nav .nav-item .nav-link {
+    color: #1e1f21;
+    margin: 0 15px;
+    transition: 0.5s;
+
+}
+
+#navbarNav li a:hover{
+    color: #f72634;
+}
+
+
+header nav .shop button {
+    color: #f72634;
+    padding: 7px 19px;
+    border-radius: 20px;
+    border-color: #f72634;
+    transition: 0.5s;
+}
+
+header nav .shop button:hover{
+    background-color: #f72634;
+    color: #f8e8e8;
+
+}
+main {
+    margin: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .text p {
+    font-size: 24px;
+    color: #47515B;
+}
+
+.pppp {
+    font-style: italic;
+    font-size: 1.2em;
+    transform: skewX(-3deg);
+}
+
+
+main .text h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    color: #FFB894;
+    font-weight: 750;
+}
+
+main .text p {
+    font-size: 18px;
+    color: #333;
+}
+
+
+/* Add a centered line under the links on hover and for the active link */
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: bottom center;
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link.active::before,
+.navbar-nav .nav-item .nav-link:hover::before {
+    transform: translateX(-50%) scaleX(1);
+    background-color: red;
+}
+
+/* Apply red color to the active link */
+.navbar-nav .nav-item .nav-link.active {
+    color: rgb(255, 0, 0);
+}
+
+
+
+.buttons {
+    margin: 30px 0;
+}
+
+.btn1 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid;
+    margin: 0 10px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #f72634; /* Changed text color */
+    border-color: #f72634;
+    transition: ease-in-out 0.5s;
+}
+
+
+
+.btn-outline-primary {
+    color: #f72634; /* Changed text color */
+    border-color: #f72634;
+    background-color: transparent;
+}
+.btn1:hover{
+    border:red solid ;
+}
+.btn-outline-primary:hover {
+    background-color: #f72634;
+    color: white;
+}
+
+.btn2 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: none;
+    margin: 0 10px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    transition: ease-in-out 0.3s;
+
+}
+
+.btn2 span {
+    display: inline-block;
+    position: relative;
+}
+
+.btn2 span img {
+    margin-right: 3px;
+    width: 32px;
+    height: 32px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Change box shadow color */
+.btn2 span img:hover {
+    box-shadow: 0px 0px 10px rgba(247, 38, 52, 0.8); /* Updated shadow color */
+}
+
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-container {
+    background: #f72634;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+.card-img {
+    width: 50px;
+    height: auto;
+}
+
+
+#about-us-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#about-us-section .text{
+    font-size: large;
+    font-weight: 400;
+    border: solid black;
+    padding: 15px;
+    border-radius: 20px;
+}
