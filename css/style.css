@@ -8,6 +8,15 @@ header nav .navbar-brand {
 }
 
 
+/* Add the following CSS code to your <style> section */
+/* .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f7f6f6;
+    padding: 10px 0;
+    text-align: center;
+} */
 
 
 header nav .navbar-nav .nav-item .nav-link {
@@ -193,6 +202,7 @@ main .text p {
 
 
 #about-us-section{
+    background: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -206,3 +216,40 @@ main .text p {
     padding: 15px;
     border-radius: 20px;
 }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.wrapper {
+    padding-bottom: 100px; /* Adjust this value to match the height of your footer */
+}
+
+.carousel-container {
+    /* Your existing styles here */
+
+}
+
+.footer {
+    position: relative;
+    border: none;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff00;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0; /* Increase padding for better spacing */
+    /* box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); Add a subtle shadow at the top of the footer */
+}
+
+
+
+@media (max-width: 767px) {
+    .navbar-nav .nav-item .nav-link::before {
+        display: none;
+    }
+}
+
